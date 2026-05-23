@@ -42,7 +42,7 @@ socket.on("talk", (message) => {
     if (text === prefix + "help") return sendMsg(help);
     if (text === prefix + "help2") return sendMsg(help2);
     if (text === prefix + "changelog") return sendMsg(changelog);
-    if (text.startsWith(prefix + "echo")) return sendMsg(text.substring(prefix.length + 5));
+    if (text.startsWith(prefix + "echo")) return sendMsg("fuck you"); // return sendMsg(text.substring(prefix.length + 5));
     if (text.startsWith(prefix + "say")) sendMsg(`This command has been temporarily disabled. Reason: abuse; Types of abuse: sexual, fraudcast, etc.`); // return sendMsg(text.substring(prefix.length + 4));
     if (text === prefix + "joke") return socket.emit("command", { list: ["joke"] });
     if (text === prefix + "triggered") return socket.emit("command", { list: ["triggered"] });
