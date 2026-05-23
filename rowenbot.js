@@ -12,7 +12,7 @@ const help = `- %%^^COMMANDS:^^%% \n` +
 `${prefix}help\\n ${prefix}help2\\n ${prefix}echo\\n ${prefix}joke\\n ${prefix}triggered\\n ${prefix}fact\\n ${prefix}hat\\n ${prefix}color\\n ${prefix}name\\n ${prefix}resethat\\n ${prefix}resetcolor\\n ${prefix}resetname\\n ${prefix}ship\\n ${prefix}roast\\n ${prefix}camel\\n ${prefix}llama\\n ${prefix}parrot\\n ${prefix}source\\n ${prefix}changelog\\n ${prefix}france\\n ${prefix}asshole\\n ${prefix}lumi\\n ${prefix}gokid`;
 
 const help2 = `- %%^^COMMANDS:^^%% \n` +
-`${prefix}pp\\n ${prefix}aplle\\n ${prefix}stfu`;
+`--${prefix}pp--\\n ${prefix}aplle\\n ${prefix}stfu`;
 
 const changelog = `- ^^**${version}**^^\\n Added ${prefix}hat\\n Added ${prefix}cow\\n Added ${prefix}france\\n Added ${prefix}asshole\\n Added ${prefix}lumi\\n Added ${prefix}gokid\\n Added ${prefix}help2\\n Added ${prefix}pp\\n Added ${prefix}aplle\\n Edited ${prefix}lumi\\n Added ${prefix}stfu`;
 
@@ -105,17 +105,7 @@ socket.on("talk", (message) => {
         return sendMsg(gokid);
     }
     if (text.startsWith(prefix + "pp")) {
-    const name = text.substring(prefix.length + 2);
-    const pps = [
-            `This is ${name}'s PP: 8=Đ`,
-            `This is ${name}'s PP: 8==Đ`,
-            `This is ${name}'s PP: 8===Đ`,
-            `This is ${name}'s PP: 8====Đ`,
-            `This is ${name}'s PP: 8=====Đ`,
-            `This is ${name}'s PP: 8======Đ`
-        ];
-        const pp = pps[Math.floor(Math.random() * pps.length)];
-        return sendMsg(pp);
+        sendMsg(`This command has been removed. Reason: sexual`);
     }
     if (text === prefix + "aplle") {
         return sendMsg("- ^^**U GOT THE APLLE**^^");
