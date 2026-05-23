@@ -9,7 +9,7 @@ socket.emit("login", {
 setup();
 
 const help = `- %%^^COMMANDS:^^%% \n` +
-`${prefix}help\\n ${prefix}help2\\n ${prefix}echo\\n ${prefix}joke\\n ${prefix}triggered\\n ${prefix}fact\\n ${prefix}hat\\n ${prefix}color\\n ${prefix}name\\n ${prefix}resethat\\n ${prefix}resetcolor\\n ${prefix}resetname\\n ${prefix}ship\\n ${prefix}roast\\n ${prefix}camel\\n ${prefix}llama\\n ${prefix}parrot\\n ${prefix}source\\n ${prefix}changelog\\n ${prefix}france\\n ${prefix}asshole\\n ${prefix}lumi\\n ${prefix}gokid`;
+`${prefix}help\\n ${prefix}help2\\n ${prefix}echo\\n ${prefix}joke\\n ${prefix}triggered\\n ${prefix}fact\\n ${prefix}hat\\n ${prefix}color\\n ${prefix}name\\n ${prefix}resethat\\n ${prefix}resetcolor\\n ${prefix}resetname\\n ${prefix}ship\\n ${prefix}roast\\n ${prefix}camel\\n ${prefix}llama\\n ${prefix}parrot\\n ${prefix}source\\n ${prefix}changelog\\n ${prefix}france\\n ${prefix}asshole\\n ${prefix}eyes-reveal\\n ${prefix}gokid`;
 
 const help2 = `- %%^^COMMANDS:^^%% \n` +
 `--${prefix}pp--\\n ${prefix}aplle\\n ${prefix}stfu`;
@@ -71,14 +71,11 @@ socket.on("talk", (message) => {
     }
 
     if (text.startsWith(prefix + "ship")) {
-        const users = text.substring(prefix.length + 5).split(" and ");
-        if (users.length !== 2) return sendMsg("Names Plz!\\n Example: ,ship he and she");
-        const percent = Math.floor(Math.random() * 101);
-        return sendMsg(`${users[0]} ❤️ ${users[1]} = ${percent}% Love!`);
+        sendMsg(`This command has been removed. Reason: this command is too weird`);
     }
 
         if (text === prefix + "camel") {
-        return sendMsg("- ^^**U GOT THE CAMEL**^^");
+        return sendMsg("This command has been removed. Reason: this meme has stolen popularity from the cow meme");
     }
     if (text === prefix + "llama") {
         return sendMsg("- ^^**U GOT THE LLAMA**^^");
@@ -92,8 +89,8 @@ socket.on("talk", (message) => {
     if (text === prefix + "cow") {
         return sendMsg("- ^^**U GOT THE COW**^^");
     }
-    if (text === prefix + "lumi") {
-        cmd(`image https://files.catbox.moe/mc9mdo.png`);
+    if (text === prefix + "eyes-reveal") {
+        cmd(`image https://files.catbox.moe/egh1p6.png`);
     }
     if (text.startsWith(prefix + "gokid")) {
     const userxd = text.substring(prefix.length + 6);
