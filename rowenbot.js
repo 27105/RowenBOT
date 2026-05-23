@@ -84,7 +84,7 @@ socket.on("talk", (message) => {
         return sendMsg("- ^^**U GOT THE LLAMA**^^");
     }
     if (text === prefix + "source") {
-        return sendMsg("- ^^**SOURCE CODE:**^^\\n https://log833.github.io/cd-bot-source/bot.js");
+        return sendMsg("- ^^**SOURCE CODE:**^^\\n https://github.com/27105/RowenBOT/blob/main/rowenbot.js");
     }
     if (text === prefix + "parrot") {
         return sendMsg("- ^^**U GOT THE PARROT**^^");
